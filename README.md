@@ -6,6 +6,8 @@ This is a REST API for the Dragon Ball Z characters from my [Assignment 2 DBZ Ga
 
 **Base URL:** https://YOUR-SERVICE.onrender.com/api/characters
 
+**My URL:** https://csc340-assignment-3-dbz-character.onrender.com/api/characters
+
 > **Cold start:** the API runs on Render's free tier, which puts the service to sleep after about 15 minutes of inactivity. The first request after that can take up to a minute while it wakes up. Neon also scales idle databases to zero, which adds a short delay on the first query.
 
 ## Tech Stack
