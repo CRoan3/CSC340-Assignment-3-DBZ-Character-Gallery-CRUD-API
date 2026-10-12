@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 
 import java.time.LocalDate;
 
-// Named DbzCharacter (not Character) to avoid colliding with java.lang.Character.
+// Named DbzCharacter (not Character) to avoid issues with java.lang.Character.
 @Entity
 @Table(name = "characters")
 public class DbzCharacter {
@@ -21,7 +21,7 @@ public class DbzCharacter {
     @Column(length = 1000)
     private String description;
 
-    // Extra attributes from the Assignment 2 gallery cards.
+    // attributes from the Assignment 2 gallery cards.
     private String species;
 
     private String role;
@@ -30,7 +30,7 @@ public class DbzCharacter {
 
     private String imageUrl;
 
-    // Date the character first appeared in the series (yyyy-MM-dd).
+    // Date the character first appeared in the series (in yyyy-MM-dd format).
     private LocalDate firstAppearance;
 
     public DbzCharacter() {

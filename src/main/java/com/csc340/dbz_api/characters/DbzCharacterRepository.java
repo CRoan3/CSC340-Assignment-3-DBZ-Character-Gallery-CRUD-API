@@ -9,9 +9,9 @@ public interface DbzCharacterRepository extends JpaRepository<DbzCharacter, Long
     // Category filter: "saiyan" matches "Saiyan".
     List<DbzCharacter> findBySpeciesIgnoreCase(String species);
 
-    // Partial, case-insensitive name search: "veg" finds "Vegeta".
+    // Partial and case-insensitive name search: "veg" finds "Vegeta".
     List<DbzCharacter> findByNameContainingIgnoreCase(String name);
 
-    // Both filters at once.
+    // Both above filters at once
     List<DbzCharacter> findByNameContainingIgnoreCaseAndSpeciesIgnoreCase(String name, String species);
 }

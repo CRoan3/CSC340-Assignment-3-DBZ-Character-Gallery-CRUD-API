@@ -13,7 +13,7 @@ public class DbzCharacterService {
         this.repository = repository;
     }
 
-    // Combines the optional filters. Blank or null arguments are ignored.
+    // Combines the optional filters. Blank or null arguments are ignored
     public List<DbzCharacter> search(String name, String species) {
         boolean hasName = name != null && !name.isBlank();
         boolean hasSpecies = species != null && !species.isBlank();
@@ -30,6 +30,7 @@ public class DbzCharacterService {
         return repository.findAll();
     }
 
+    // find by id, create, update, delete methods
     public DbzCharacter findById(Long id) {
         return repository.findById(id).orElseThrow(() -> new DbzCharacterNotFoundException(id));
     }

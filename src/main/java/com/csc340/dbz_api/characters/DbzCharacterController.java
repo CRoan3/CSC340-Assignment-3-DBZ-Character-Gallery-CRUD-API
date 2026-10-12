@@ -23,6 +23,7 @@ public class DbzCharacterController {
         return service.search(name, species);
     }
 
+    // find by id, create, update, delete
     @GetMapping("/{id}")
     public DbzCharacter get(@PathVariable Long id) {
         return service.findById(id);
