@@ -4,7 +4,7 @@ This is a REST API for the Dragon Ball Z characters from my [Assignment 2 DBZ Ga
 
 ## Live API
 
-**Base URL:** https://YOUR-SERVICE.onrender.com/api/characters
+**Base/Example URL:** https://YOUR-SERVICE.onrender.com/api/characters
 
 **My URL:** https://csc340-assignment-3-dbz-character.onrender.com/api/characters
 
